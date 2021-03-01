@@ -7,7 +7,7 @@ const Sidebar = () => {
       <div className="p-6">
         <p className="uppercase text-white text-2xl tracking-wide text-center font-bold">RestaurantApp</p>  
         <p className="mt-3 text-gray-600">Administra tu restaurante en las gisuientes opciones:</p>
-        <nav>
+        <nav className="mt-10">
           <NavLink className="p-1 text-gray-400 block hover:bg-yellow-500 hover:text-gray-900" activeClassName="text-yellow-500" end to="/">Órdenes</NavLink>
           <NavLink className="p-1 text-gray-400 block hover:bg-yellow-500 hover:text-gray-900" activeClassName="text-yellow-500" end to="/menu">Menú</NavLink>
         </nav>
