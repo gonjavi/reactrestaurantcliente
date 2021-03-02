@@ -180,6 +180,12 @@ const NuevoPlatillo = () => {
               </div>
             )}
 
+            {urlimagen && (
+              <p className="bg-green-500 text-white p-3 text-center my-5">
+                La imagen se subió correctamente
+              </p>
+            )}
+
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="descripcion">Descripción</label>
               <textarea 
