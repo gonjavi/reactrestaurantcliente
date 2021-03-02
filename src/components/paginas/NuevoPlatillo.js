@@ -172,6 +172,13 @@ const NuevoPlatillo = () => {
                 onProgress={handleProgress}
               />
             </div>
+            { subiendo && (
+              <div className="h-12 relative w-full border">
+                <div style={{ width: `${progreso}%`}} className="bg-green-500 absolute left-0 top-0 text-white px-2 text-sm h-12 flex items-center">
+                  {progreso} %
+                </div>
+              </div>
+            )}
 
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="descripcion">Descripción</label>
