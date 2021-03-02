@@ -74,14 +74,14 @@ const NuevoPlatillo = () => {
                 .ref("productos")
                 .child(nombre)
                 .getDownloadURL();
-    console.log(url);
     guardarUrlimagen(url);
 
 
   }
   const handleProgress = progreso => {
     guardarProgreso(progreso);
-    console.log(progreso);
+    
+
   }
 
   return (
