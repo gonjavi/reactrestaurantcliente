@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import { FirebaseContext } from '../../firebase';
+import Orden from '../ui/Orden';
 
 const Ordenes = () => {
   const [ordenes, guardarOrdenes] = useState([]);
@@ -27,6 +28,15 @@ const Ordenes = () => {
   return (
     <>
       <h1 className="text-3xl font-light mb-4">Ordenes</h1>
+
+      <div className="sm:flex sm:flex-wrap -mx-3">
+        {ordenes.map(orden => (
+          <Orden
+            key={orden.id}
+            orden={orden}
+          />
+        ))}
+      </div>
     </>
   );
 }
