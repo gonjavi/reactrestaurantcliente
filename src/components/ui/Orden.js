@@ -56,6 +56,12 @@ const Orden = ({ orden }) => {
             </button>
           </div>
         )}
+
+        {orden.tiempoentrega > 0 && (
+          <p className="text-gray-700">Tiempo de entrega
+            <span className="font-bold">{orden.tiempoentrega}  Minutos</span>
+          </p>
+        )}
       </div>
     </div>
     
