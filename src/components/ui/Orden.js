@@ -7,6 +7,7 @@ const Orden = ({ orden }) => {
 
   const { firebase } = useContext(FirebaseContext);
   
+  console.log(orden)
   // definir tiempo de entrega en timepo real
   const definirTiempo = id => {
     try {
